@@ -8,7 +8,15 @@
 
     <meta charset="UTF-8">
     <title>O mnie Anna Skora</title>
+    
+<!--    meta-->
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <!--    fontawsome-->
 
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
 
     <!--    style glowne-->
     <link rel="stylesheet" href="css/style.css">
@@ -20,6 +28,13 @@
 
 <body>
     <nav id="menu">
+       
+<!--       menu w mobile-->
+       <label for="drop" class="toggle"><i class="fa fa-bars fa-3x"></i></label>
+       <input type="checkbox" id="drop">
+       
+       
+       
         <ul>
             <li class="menu-item"><a href="#omnie">O mnie</a></li>
             <li class="menu-item"><a href="#umiejetnosci">Umiejętności</a></li>
@@ -57,34 +72,100 @@
         <div class="image-inner">
             <figure>
                 <img src="icons/html5.png" alt="HTML 5">
-                <figurecaption>HTML5</figurecaption>
+                <figcaption>HTML5</figcaption>
             </figure>
             <figure>
                 <img src="icons/css3.png" alt="CSS3">
-                <figurecaption>CSS3</figurecaption>
+                <figcaption>CSS3</figcaption>
             </figure>
             <figure>
                 <img src="icons/js.png" alt="JavaScript">
-                <figurecaption>JavaScript</figurecaption>
+                <figcaption>JavaScript</figcaption>
             </figure>
             <figure>
                 <img src="icons/jquery.png" alt="jQuery">
-                <figurecaption>jQuery</figurecaption>
+                <figcaption>jQuery</figcaption>
             </figure>
         </div>
+    </section>
+    <!--potyfolio-->
 
-
+    <section id="portfolio">
+        <h2 class="naglowek">Moje <span class="me"> Portfolio</span></h2>
+        <div class="portfolio-inner img1">
+            <div class="mask">
+                <div class="border">
+                    <div class="content">
+                        <h3>lorem ipsum</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. .</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.!Lorem ipsum dolor sit amet, consectetur adipisicing elit.!.</p>
+                        <i class="fa fa-link fa-2x"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-inner img2">
+            <div class="mask">
+                <div class="border">
+                    <div class="content">
+                        <h3>lorem ipsum</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. .</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.!Lorem ipsum dolor sit amet, consectetur adipisicing elit.! .</p>
+                        <i class="fa fa-link fa-2x"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-inner img3">
+            <div class="mask">
+                <div class="border">
+                    <div class="content">
+                        <h3>lorem ipsum</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. .</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.!Lorem ipsum dolor sit amet, consectetur adipisicing elit.! .</p>
+                        <i class="fa fa-link fa-2x"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clear">
+        </div>
 
     </section>
 
 
+    <!--kontakt-->
+
+    <section id="kontakt">
+        <div class="kontakt-inner">
+            <h2 class="naglowek">Anna <span class="me">Skóra</span></h2>
+            <address>
+                ul. Mostowa 6/13 <br> 31-619 Kraków <br><br> tel: 600 500 500<br> e-mail: <a href="email">anna.skora@op.pl</a>
+            </address>
+            <div class="fontawesome">
+                <a href="" i class="fa fa-facebook" aria-hidden="true"></a>
+                <a href="" i class="fa fa-google-plus" aria-hidden="true"></a>
+                <a href="" i class="fa fa-twitter" aria-hidden="true"></a>
+                <a href="" i class="fa fa-linkedin" aria-hidden="true"></a>
+            </div>
+        </div>
 
 
+        <div class="kontakt-inner margines">
+            <form action="https://formspree.io/zija@op.pl" method="POST">
+                <input type="name" placeholder="Imię i nazwisko">
+                <input type="email" placeholder="Adres e-mail">
+                <textarea name="textarea" id="textarea" placeholder="Treść wiadomości" cols="30" rows="50"></textarea>
+                <input type="submit" value="WYŚLIJ">
+            </form>
 
+        </div>
+        <div class="clear"></div>
+    </section>
 
-
-
-
+    <footer id="footer">
+        <p>Copyrights &copy; A S</p>
+    </footer>
 
 </body>
 

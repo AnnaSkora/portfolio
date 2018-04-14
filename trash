@@ -1,0 +1,133 @@
+#omnie .naglowek,
+#umiejetnosci .naglowek
+#portfolio 
+
+class="naglowek"
+
+#omnie figure {
+    float: left;
+    width: 50%;
+    margin: 0;
+}
+
+#omnie .article {
+    display: inline-block;
+    width: 50%;
+    float: left;
+    
+    #2b4a64
+    
+    placeholder="Wiadomość"
+    
+    
+    section id="kontakt">
+        <div class="kontakt-inner">
+            <h2 class="naglowek">Anna <span class="me">Skóra</span></h2>
+            <div class="adres">
+                <p>ul. Mostowa 6/13</p>
+                <p>31-619 Kraków</p>
+            </div>
+            <div class="dane">
+                <p>tel: 600 500 500</p>
+                <p>e-mail: <a href="email">anna.skora@op.pl</a></p>
+            </div>
+            <div class="fontawesome">
+                <div id="facebook">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                </div>
+                <div id="google">
+                    <i class="fa fa-google-plus" aria-hidden="true"></i>
+                </div>
+                <div id="twitter">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                </div>
+                <div id="linkedin">
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="kontakt-inner">
+            <form action="https://formspree.io/zija@op.pl" method="POST">
+                <input type="name" id="name" placeholder="Imię i nazwisko">
+                <input type="email" id="email" placeholder="Adres e-mail">
+                <textarea name="textarea" id="textarea" placeholder="Treść wiadomości" cols="30" rows="10"></textarea>
+                <input type="submit" value="wyślij">
+            </form>
+
+        </div>
+        <div class="clear"></div>
+    </section>
+    
+    
+    
+    #kontakt {
+    background-color: #213b50;
+    color: white;
+    width: 100%;
+    margin: 0;
+    text-align: left;
+}
+
+#kontakt .kontakt-inner {
+    float: left;
+    width: 50%;
+    display: inline-block;
+
+}
+
+#kontakt .kontakt-inner adress {
+    font-size: 15px;
+    padding: 10px 0;
+    font-style: normal;
+
+}
+
+#kontakt .kontakt-inner .dane {
+    font-size: 15px;
+}
+
+#kontakt .kontakt-form {
+    float: left;
+    width: 50%;
+
+
+}
+
+#kontakt .kontakt-inner .fontawesome {
+    display: inline-block;
+    text-align: center;
+    padding: 50px 0;
+    width: 50%;
+    margin-top: 40px;
+
+}
+
+#facebook,
+#google,
+#twitter,
+#linkedin {
+    border: 1px solid white;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    color: white;
+}
+
+
+
+#kontakt .kontakt-inner a {
+    color: limegreen;
+}
+
+#kontakt .kontakt-form #name,
+#email,
+#textarea {
+    background-color: #2b4a64;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: white;
+}

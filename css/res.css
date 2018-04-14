@@ -1,0 +1,53 @@
+@media all and (max-width: 992px) {
+    .toggle {
+        display: block;
+        text-align: right;
+    }
+    /*menu w mobile*/
+    #menu ul {
+        display: none;
+    }
+
+    #menu #drop:checked + ul {
+        display: block;
+    }
+    #menu ul .menu-item {
+        display: block;
+    }
+
+    /*menu w mobile - koniec*/
+    #omnie figure,
+    #omnie .article {
+        width: 100%;
+    }
+
+    #omnie figure img {
+        width: 100%;
+    }
+
+    #portfolio .portfolio-inner {
+        width: 100%;
+    }
+
+    #kontakt .kontakt-inner {
+        width: 100%;
+        text-align: center;
+    }
+
+    .fontawesome {
+        margin-bottom: 20px;
+    }
+
+    #kontakt .kontakt-inner form input[type="submit"] {
+        float: none;
+    }
+}
+
+
+
+
+@media all and (max-width: 768px) {}
+
+}
+
+@media all and (max-width: 480px) {}

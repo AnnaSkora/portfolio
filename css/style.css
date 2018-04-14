@@ -8,6 +8,19 @@ body {
 }
 
 
+/*menu w mobile*/
+
+.toggle,
+#drop {
+    display: none;
+}
+
+
+.fa.fa-bars {
+    color: limegreen;
+    padding-right: 20px;
+    padding-top: 15px;
+}
 
 #menu {
     margin: 0;
@@ -25,6 +38,7 @@ body {
     margin: 0;
     padding: 0;
     list-style: none;
+    background: white;
 }
 
 #menu ul .menu-item {
@@ -82,7 +96,7 @@ header {
 }
 
 section {
-    padding: 30px 50px;
+    padding: 80px;
     /*    top: 40px;*/
     margin: 0;
     text-align: center;
@@ -101,16 +115,14 @@ section {
 
 }
 
-#omnie .naglowek,
-#umiejetnosci .naglowek {
-    font-weight: 100;
+.naglowek {
+    font-weight: 400;
     font-size: 30px;
 }
 
 
 
-#omnie .me,
-#umiejetnosci .me {
+.me {
     color: limegreen;
     font-weight: 400;
 
@@ -142,8 +154,175 @@ section {
 
 #umiejetnosci {
     clear: both;
+    text-align: center;
+
+
 }
 
 .image-inner figure {
     display: inline-block
+}
+
+figcaption {
+    margin: 20px 0;
+}
+
+
+#portfolio {
+    text-align: center;
+}
+
+.img1 {
+    background-image: url(../img/portfolio1.jpg);
+}
+
+.img2 {
+    background-image: url(../img/portfolio2.jpg);
+}
+
+.img3 {
+    background-image: url(../img/portfolio3.jpg);
+}
+
+#portfolio .portfolio-inner {
+    display: inline-block;
+    float: left;
+    height: 350px;
+    width: 33.333333%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+#portfolio .portfolio-inner .mask {
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    opacity: 0;
+    transition: all 0.4s;
+}
+
+#portfolio .portfolio-inner:hover .mask {
+    opacity: 1;
+
+}
+
+#portfolio .portfolio-inner .mask .border {
+    border: 1px solid #FFF;
+    height: 100%;
+    position: relative;
+
+}
+
+#portfolio .portfolio-inner .mask .border .content {
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/*kontakt*/
+
+#kontakt {
+    background-color: #213b50;
+    color: white;
+    width: 100%;
+    margin: 0;
+    text-align: left;
+}
+
+#kontakt .kontakt-inner {
+    float: left;
+    width: 50%;
+    display: inline-block;
+
+}
+
+#kontakt .kontakt-inner adress {
+    font-size: 15px;
+    padding: 10px 0;
+    font-style: normal;
+
+}
+
+#kontakt .kontakt-inner .dane {
+    font-size: 15px;
+}
+
+#kontakt .kontakt-form {
+    float: left;
+    width: 50%;
+
+}
+
+#kontakt .kontakt-inner address {
+    font-style: normal;
+}
+
+#kontakt .kontakt-inner address a {
+    color: limegreen;
+}
+
+.kontakt-inner.margines {
+    padding-top: 40px;
+}
+
+
+.fontawesome {
+    margin-top: 40px;
+}
+
+.fontawesome a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    color: #FFF;
+    line-height: 40px;
+    border: 1px solid #FFF;
+    margin-right: 10px;
+    transition: all 0.4s;
+    text-decoration: none;
+}
+
+.fontawesome a:hover {
+    background-color: #FFF;
+    color: #213b50;
+}
+
+#kontakt .kontakt-inner form input:not([type="submit"]),
+#kontakt .kontakt-inner form textarea {
+    display: block;
+    width: 100%;
+    background-color: #2b4a64;
+    border: 1px solid #2b4a64;
+    margin-bottom: 20px;
+    height: 40px;
+    padding: 5px;
+    resize: none;
+    color: white;
+}
+
+#kontakt .kontakt-inner form input[type="submit"] {
+    float: right;
+    width: 20%;
+    background-color: limegreen;
+    color: #FFF;
+    line-height: 40px;
+    text-transform: uppercase;
+    border: 0;
+    font-weight: bold;
+}
+
+/*footer*/
+
+#footer {
+    background-color: #142634;
+    color: #FFF;
+    padding: 0 50px;
+}
+
+#footer p {
+    margin: 0;
 }
